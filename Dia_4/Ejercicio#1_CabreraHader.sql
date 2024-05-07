@@ -85,6 +85,23 @@ INSERT INTO idioma_pais VALUES
 (9,99,1),
 (11,111,1);
 
+/* PRIMERAS CONSULTAS */
+
+-- cONSULTA DE tipo inner join para obtener las ciudades
+-- que estan especificamente asignadas a un pais
+
+select pais.nombre as NombrePais, ciudad.nombre as NombreCiudad
+from pais inner join ciudad
+on pais.id = ciudad.id;
+
+select * from ciudad;
+
+select * 
+from worldd.ciudad as C
+GROUP BY id
+HAVING 'id' = 1;
+
+
 
 -- Desarrolado por Hader Cabrera 
 -- C.C: 1.1102.381.910
